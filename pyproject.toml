@@ -1,0 +1,26 @@
+[project]
+name = "sedona-geoservice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Artem Kutepov", email = "art_kutepov@mail.ru" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "apache-sedona[spark]>=1.9.1",
+    "docker>=7.2.0",
+    "geopandas>=1.1.4",
+    "pandas>=3.0.5",
+    "psycopg2>=2.9.12",
+    "pyarrow>=25.0.0",
+    "pyspark==3.5.4",
+    "sqlalchemy>=2.0.51",
+]
+
+[project.scripts]
+sedona-geoservice = "sedona_geoservice:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"

@@ -1,0 +1,8 @@
+docker run -e DRIVER_MEM=6g -e EXECUTOR_MEM=8g -p 8888:8888 -p 8080:8080 -p 8081:8081 -p 4040:4040 apache/sedona:1.8.0
+
+docker run -e DRIVER_MEM=6g -e EXECUTOR_MEM=8g -p 8888:8888 -p 8080:8080 -p 8081:8081 -p 4040:4040 -v "D:/Artem/Work/amtech_projects/sedona_geoservice/src/sedona_docker_mount:/examples" apache/sedona:latest
+
+
+curl -s "<https://get.sdkman.io>" | bash
+
+http://localhost:4040/jobs/
